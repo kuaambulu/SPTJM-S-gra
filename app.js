@@ -1,7 +1,7 @@
 'use strict';
 
 /* Ganti dengan URL Web app hasil Deploy (berakhiran /exec). */
-const API_URL = 'https://script.google.com/macros/s/ISI_ID_DEPLOYMENT/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbyDTaWxJkZvN5qyYwH4wLjnG5za02GXKEObxJFCteLb5BY_hEi9_hMO32ZwNPlmBdFbGg/exec';
 
 const $ = s => document.querySelector(s);
 const FIELDS = [
