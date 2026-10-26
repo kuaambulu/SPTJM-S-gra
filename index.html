@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPTJM – KUA Kecamatan Ambulu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="box">
+    <h1>SPTJM KUA Ambulu</h1>
+    <p class="st">Data diambil dari Google Sheet, diperbarui otomatis saat file Excel SIMKAH 4 diunggah ke Drive.</p>
+    <div class="row">
+      <div>
+        <label for="key">Kunci akses</label>
+        <input type="password" id="key" autocomplete="current-password" placeholder="Masukkan sekali per sesi">
+      </div>
+      <button class="o" id="sync" type="button">Sinkronkan Drive</button>
+    </div>
+    <p class="st" id="ss" role="status"></p>
+  </header>
+
+  <section class="box" aria-labelledby="h-cari">
+    <h3 id="h-cari">Cari data</h3>
+    <label for="q">NIK Suami, NIK Istri, atau No. Akta Nikah</label>
+    <div class="row">
+      <input id="q" autocomplete="off" placeholder="Ketik lalu Enter">
+      <button id="go" type="button">Cari</button>
+    </div>
+    <p class="st" id="qs" role="status"></p>
+    <div id="res"></div>
+  </section>
+
+  <section class="box" aria-labelledby="h-data">
+    <h3 id="h-data">Periksa data</h3>
+    <div class="g2" id="fields"></div>
+  </section>
+
+  <section class="box" aria-labelledby="h-ttd">
+    <h3 id="h-ttd">Tanda tangan</h3>
+    <div class="pads" id="pads"></div>
+  </section>
+
+  <section class="box">
+    <button id="mk" type="button">Buat SPTJM (Doc + PDF)</button>
+    <p class="st" id="ms" role="status"></p>
+    <div id="out"></div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
